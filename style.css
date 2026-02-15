@@ -207,11 +207,13 @@ select:focus {
 
 /* Subjects Section */
 #subjects-display {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto 4rem;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    justify-content: center;
     gap: 2rem;
     opacity: 0;
     transform: translateY(20px);
@@ -541,4 +543,17 @@ footer {
     #subjects-display {
         grid-template-columns: 1fr;
     }
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 5rem 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    background: var(--card-bg);
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px);
 }

@@ -4,7 +4,7 @@ const studyData = {
             {
                 name: "Data Structures and Analysis",
                 ppt: [
-                    { name: "TREES", link: "https://docs.google.com/presentation/d/1LZ_4gE8IpQSt2h5PXFD6bStrs1bT1nZ7/edit?usp=drive_link&ouid=110804383741647495330&rtpof=true&sd=true" },
+                    { name: "TREES", link: "https://drive.google.com/file/d/1P3B28VU6mbN9cdPMAHAs5G6oWoeGbJhw/view?usp=sharing" },
                     { name: "Graphs", link: "https://drive.google.com/file/d/1gu402ns3t4AtzvQHBrQAKsUL3lYX-40F/view?usp=sharing" }
                 ],
 
@@ -14,29 +14,29 @@ const studyData = {
             },
             {
                 name: "Theory of Computation",
-                ppt: [{ name: "UNIT 1", link: "https://docs.google.com/presentation/d/1mfWRp8zolE7N1ZnpK5P3RtszbV64RpYW/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+                ppt: [{ name: "UNIT 1", link: "https://drive.google.com/file/d/1h2aOpHxZkdP7c83-OUzO3Cm3SRFIsjj8/view?usp=drive_link" }],
                 // notes: [{ name: "Turing Machines", link: "PASTE_LINK_HERE" }],
                 // pyqs: [{ name: "Midterm 2023", link: "PASTE_LINK_HERE" }],
                 // other: []
             },
             {
                 name: "Environmental Science",
-                ppt: [{ name: "Unit 1", link: "https://docs.google.com/presentation/d/1fzx5Z5-CWucaCnPfPUXW5cc1vvJYRQCY/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+                ppt: [{ name: "Unit 1", link: "https://drive.google.com/file/d/1g4uSoNb4SMZ15Rz1yYLvk_QG-HWDL53e/view?usp=drive_link" }],
                 // notes: [{ name: "Natural Resources", link: "PASTE_LINK_HERE" }],
                 // pyqs: [],
                 // other: []
             },
             {
                 name: "Database Management Systems",
-                ppt: [{ name: "UNIT 1 ", link: "https://docs.google.com/presentation/d/1fBVj3QqJhM4BaLcUkBWXZ9FcKR3BQSIc/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
-            //     notes: [{ name: "SQL Queries", link: "PASTE_LINK_HERE" }],
-            //     pyqs: [{ name: "Final 2023", link: "PASTE_LINK_HERE" }],
-            //     other: []
+                ppt: [{ name: "UNIT 1 ", link: "https://drive.google.com/file/d/1dw57bqBQsvLhbk_cRZYdjUAERuWVf3d1/view?usp=sharing" }],
+                notes: [{ name: "UNIT 1 notes", link: "https://drive.google.com/file/d/1Y8Tx0n3d4gRQBUNUJA1g6f5ibjnO-VBr/view?usp=sharing" }],
+                //     pyqs: [{ name: "Final 2023", link: "PASTE_LINK_HERE" }],
+                //     other: []
             },
             {
                 name: "Statistics and Probability",
                 ppt: [{ name: "Statical Techniques(UNIT 1)", link: "https://docs.google.com/presentation/d/16f1zGNP9Xpg5yHWaMMwCGDLU_ZaXCJ7N/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" },
-                    {name: "unit 2", link:  "https://docs.google.com/presentation/d/1vaHajD1vTIqXloStZSju_3srPEHdYdI4/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true"}
+                { name: "unit 2", link: "https://docs.google.com/presentation/d/1vaHajD1vTIqXloStZSju_3srPEHdYdI4/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }
                 ],
                 // notes: [{ name: "Testing of Hypothesis", link: "PASTE_LINK_HERE" }],
                 // pyqs: [],
@@ -44,7 +44,8 @@ const studyData = {
             },
             {
                 name: "Soft Computing",
-                ppt: [{ name: "Unit 1", link: "https://docs.google.com/presentation/d/1v5xYzbyIn7NqKXVQSaopxB4JGWOnUMXL/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+                ppt: [{ name: "Unit 1", link: "https://drive.google.com/file/d/1Ek4cCl8BNoATiXEI71DYbiDUwEYSxI3y/view?usp=drive_link" }],
+                ppt: [{ name: "Unit 2", link: "https://drive.google.com/file/d/15uXp49yAPXLTwDVyBfnu4WmVPfW1Vh55/view?usp=drive_link" }],
                 // notes: [{ name: "Neural Networks", link: "PASTE_LINK_HERE" }],
                 // pyqs: [],
                 // other: []
@@ -60,8 +61,23 @@ const collegeSelect = document.getElementById('college-select');
 const semGrid = document.getElementById('sem-grid');
 const subjectsDisplay = document.getElementById('subjects-display');
 
-let currentCollege = '';
-let currentSem = '';
+let currentCollege = 'niet';
+let currentSem = '4';
+
+// Initialize Defaults on Load
+window.addEventListener('DOMContentLoaded', () => {
+    // Set college dropdown
+    collegeSelect.value = currentCollege;
+
+    // Set active semester button
+    const defaultSemBtn = document.querySelector(`.sem-btn[data-sem="${currentSem}"]`);
+    if (defaultSemBtn) {
+        defaultSemBtn.classList.add('active');
+    }
+
+    // Initial load of subjects
+    updateSubjects();
+});
 
 // Event Listeners
 collegeSelect.addEventListener('change', (e) => {
@@ -91,7 +107,7 @@ function updateSubjects() {
         const subjects = (studyData[currentCollege] && studyData[currentCollege][currentSem]) || [];
 
         if (subjects.length === 0) {
-            subjectsDisplay.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary);">No study materials available for this selection yet.</div>`;
+            subjectsDisplay.innerHTML = `<div class="no-results">No study materials available for this selection yet.</div>`;
         } else {
             subjects.forEach(subject => {
                 const card = createSubjectCard(subject);
