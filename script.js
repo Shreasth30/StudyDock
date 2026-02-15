@@ -14,7 +14,7 @@ const studyData = {
             },
             {
                 name: "Theory of Computation",
-                ppt: [{ name: "Finite Automata", link: "PASTE_LINK_HERE" }],
+                ppt: [{ name: "UNIT 1", link: "https://docs.google.com/presentation/d/1mfWRp8zolE7N1ZnpK5P3RtszbV64RpYW/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
                 // notes: [{ name: "Turing Machines", link: "PASTE_LINK_HERE" }],
                 // pyqs: [{ name: "Midterm 2023", link: "PASTE_LINK_HERE" }],
                 // other: []
