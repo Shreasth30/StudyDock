@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia - Premium Study Materials</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="cursor-glow" id="cursor-glow"></div>
+    </div>
+
+    <header>
+        <h1 class="fade-in">Academia</h1>
+        <p class="fade-in" style="animation-delay: 0.2s;">SELECT YOUR JOURNEY TO EXCELLENCE</p>
+        <button id="open-contribute" class="contribute-btn fade-in" style="animation-delay: 0.3s;">
+            <i class="fas fa-plus-circle"></i> Contribute Material
+        </button>
+    </header>
+
+    <main class="selection-container">
+        <!-- ... existing content ... -->
+        <section class="dropdown-group fade-in" style="animation-delay: 0.4s;">
+            <h3>Select Your Institution</h3>
+            <div class="select-wrapper">
+                <select id="college-select">
+                    <option value="" disabled selected>Choose your College</option>
+                    <option value="niet">NIET (Noida Institute of Engineering & Tech)</option>
+                    <option value="gl-bajaj">GL Bajaj Institute of Technology</option>
+                    <option value="gniot">GNIOT Group of Institutions</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Semester Selection -->
+        <section class="dropdown-group fade-in" style="animation-delay: 0.6s;">
+            <h3>Select Semester</h3>
+            <div class="semester-grid" id="sem-grid">
+                <button class="sem-btn" data-sem="1">SEM 1</button>
+                <button class="sem-btn" data-sem="2">SEM 2</button>
+                <button class="sem-btn" data-sem="3">SEM 3</button>
+                <button class="sem-btn" data-sem="4">SEM 4</button>
+                <button class="sem-btn" data-sem="5">SEM 5</button>
+                <button class="sem-btn" data-sem="6">SEM 6</button>
+                <button class="sem-btn" data-sem="7">SEM 7</button>
+                <button class="sem-btn" data-sem="8">SEM 8</button>
+            </div>
+        </section>
+
+        <!-- Subjects Display Area -->
+        <section id="subjects-display">
+            <!-- Dynamically populated by script.js -->
+        </section>
+    </main>
+
+    <!-- Contribution Modal -->
+    <div id="contribute-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contribute Study Material</h2>
+            <p>Upload your resources to help fellow students. They will be reviewed and added.</p>
+
+            <form id="contribute-form">
+                <div class="form-group">
+                    <label>College Name</label>
+                    <input type="text" placeholder="e.g. NIET" required>
+                </div>
+                <div class="form-group">
+                    <label>Semester</label>
+                    <select required>
+                        <option value="" disabled selected>Select Semester</option>
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                        <option value="7">Semester 7</option>
+                        <option value="8">Semester 8</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Subject Name</label>
+                    <input type="text" placeholder="e.g. Data Structures" required>
+                </div>
+                <div class="form-group">
+                    <label>Material Type</label>
+                    <div class="type-selection">
+                        <label><input type="radio" name="type" value="ppt" checked> PPT</label>
+                        <label><input type="radio" name="type" value="notes"> Notes</label>
+                        <label><input type="radio" name="type" value="pyqs"> PYQs</label>
+                        <label><input type="radio" name="type" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="upload-area" id="drop-zone">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Click to select or drag & drop files</p>
+                    <input type="file" id="file-input" hidden>
+                </div>
+
+                <div id="file-info"
+                    style="display: none; margin-top: 1rem; color: var(--accent-secondary); font-size: 0.9rem;">
+                    <i class="fas fa-file"></i> <span id="file-name"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Proceed to Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Academia Study Portal. Designed with elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
