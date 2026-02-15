@@ -8,44 +8,46 @@ const studyData = {
                     { name: "Graphs", link: "https://drive.google.com/file/d/1gu402ns3t4AtzvQHBrQAKsUL3lYX-40F/view?usp=sharing" }
                 ],
 
-                notes: [{ name: "Binary Trees", link: "PASTE_LINK_HERE" }],
-                pyqs: [{ name: "Final 2024", link: "PASTE_LINK_HERE" }],
-                other: []
+                // notes: [{ name: "Binary Trees", link: "PASTE_LINK_HERE" }],
+                // pyqs: [{ name: "Final 2024", link: "PASTE_LINK_HERE" }],
+                // other: []
             },
             {
                 name: "Theory of Computation",
                 ppt: [{ name: "Finite Automata", link: "PASTE_LINK_HERE" }],
-                notes: [{ name: "Turing Machines", link: "PASTE_LINK_HERE" }],
-                pyqs: [{ name: "Midterm 2023", link: "PASTE_LINK_HERE" }],
-                other: []
+                // notes: [{ name: "Turing Machines", link: "PASTE_LINK_HERE" }],
+                // pyqs: [{ name: "Midterm 2023", link: "PASTE_LINK_HERE" }],
+                // other: []
             },
             {
-                name: "Environment and Ecology",
-                ppt: [{ name: "Eco-systems", link: "PASTE_LINK_HERE" }],
-                notes: [{ name: "Natural Resources", link: "PASTE_LINK_HERE" }],
-                pyqs: [],
-                other: []
+                name: "Environmental Science",
+                ppt: [{ name: "Unit 1", link: "https://docs.google.com/presentation/d/1fzx5Z5-CWucaCnPfPUXW5cc1vvJYRQCY/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+                // notes: [{ name: "Natural Resources", link: "PASTE_LINK_HERE" }],
+                // pyqs: [],
+                // other: []
             },
             {
                 name: "Database Management Systems",
-                ppt: [{ name: "ER Diagrams", link: "PASTE_LINK_HERE" }],
-                notes: [{ name: "SQL Queries", link: "PASTE_LINK_HERE" }],
-                pyqs: [{ name: "Final 2023", link: "PASTE_LINK_HERE" }],
-                other: []
+                ppt: [{ name: "UNIT 1 ", link: "https://docs.google.com/presentation/d/1fBVj3QqJhM4BaLcUkBWXZ9FcKR3BQSIc/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+            //     notes: [{ name: "SQL Queries", link: "PASTE_LINK_HERE" }],
+            //     pyqs: [{ name: "Final 2023", link: "PASTE_LINK_HERE" }],
+            //     other: []
             },
             {
                 name: "Statistics and Probability",
-                ppt: [{ name: "Distributions", link: "PASTE_LINK_HERE" }],
-                notes: [{ name: "Testing of Hypothesis", link: "PASTE_LINK_HERE" }],
-                pyqs: [],
-                other: []
+                ppt: [{ name: "Statical Techniques(UNIT 1)", link: "https://docs.google.com/presentation/d/16f1zGNP9Xpg5yHWaMMwCGDLU_ZaXCJ7N/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" },
+                    {name: "unit 2", link:  "https://docs.google.com/presentation/d/1vaHajD1vTIqXloStZSju_3srPEHdYdI4/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true"}
+                ],
+                // notes: [{ name: "Testing of Hypothesis", link: "PASTE_LINK_HERE" }],
+                // pyqs: [],
+                // other: []
             },
             {
                 name: "Soft Computing",
-                ppt: [{ name: "Fuzzy Logic", link: "PASTE_LINK_HERE" }],
-                notes: [{ name: "Neural Networks", link: "PASTE_LINK_HERE" }],
-                pyqs: [],
-                other: []
+                ppt: [{ name: "Unit 1", link: "https://docs.google.com/presentation/d/1v5xYzbyIn7NqKXVQSaopxB4JGWOnUMXL/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true" }],
+                // notes: [{ name: "Neural Networks", link: "PASTE_LINK_HERE" }],
+                // pyqs: [],
+                // other: []
             }
         ]
     },
