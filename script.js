@@ -44,8 +44,8 @@ const studyData = {
             },
             {
                 name: "Soft Computing",
-                ppt: [{ name: "Unit 1", link: "https://drive.google.com/file/d/1Ek4cCl8BNoATiXEI71DYbiDUwEYSxI3y/view?usp=drive_link" }],
-                ppt: [{ name: "Unit 2", link: "https://drive.google.com/file/d/15uXp49yAPXLTwDVyBfnu4WmVPfW1Vh55/view?usp=drive_link" }],
+                ppt: [{ name: "Unit 1", link: "https://drive.google.com/file/d/1Ek4cCl8BNoATiXEI71DYbiDUwEYSxI3y/view?usp=drive_link" },
+                { name: "Unit 2", link: "https://drive.google.com/file/d/15uXp49yAPXLTwDVyBfnu4WmVPfW1Vh55/view?usp=drive_link" }],
                 // notes: [{ name: "Neural Networks", link: "PASTE_LINK_HERE" }],
                 // pyqs: [],
                 // other: []
