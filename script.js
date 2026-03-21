@@ -36,7 +36,7 @@ const studyData = {
             {
                 name: "Statistics and Probability",
                 ppt: [{ name: "Statical Techniques(UNIT 1)", link: "https://drive.google.com/file/d/12wEWD9sjAvG8nNYJwcsGSbAKkdTJglab/view?usp=sharing" },
-                { name: "unit 2", link: "https://drive.google.com/file/d/1ko8vwXnpRN-oaSjst17VpNIkSQR-JrFi/view?usp=sharing" }
+                { name: "unit 2", link: "https://drive.google.com/file/d/1ko8vwXnpRN-oaSjst17VpNIkSQR-JrFi/view?usp=sharing" },
                 {name: "unit 3", link:"https://docs.google.com/presentation/d/1SlrEhkpfoCX0UUCyQ0c4ulMbnB3nAi9V/edit?usp=sharing&ouid=110804383741647495330&rtpof=true&sd=true"}
                 ],
                 // notes: [{ name: "Testing of Hypothesis", link: "PASTE_LINK_HERE" }],
