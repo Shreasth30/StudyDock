@@ -5,7 +5,8 @@ const studyData = {
                 name: "Data Structures and Analysis",
                 ppt: [
                     { name: "TREES", link: "https://drive.google.com/file/d/1P3B28VU6mbN9cdPMAHAs5G6oWoeGbJhw/view?usp=sharing" },
-                    { name: "Graphs", link: "https://drive.google.com/file/d/1gu402ns3t4AtzvQHBrQAKsUL3lYX-40F/view?usp=sharing" }
+                    { name: "Graphs", link: "https://drive.google.com/file/d/1gu402ns3t4AtzvQHBrQAKsUL3lYX-40F/view?usp=sharing" },
+                    { name: "Unit3 DP", link: "https://drive.google.com/file/d/17hro5N6xpUzEf-uHsIEMDc8FJhtye3ev/view?usp=sharing" }
                 ],
 
                 // notes: [{ name: "Binary Trees", link: "PASTE_LINK_HERE" }],
